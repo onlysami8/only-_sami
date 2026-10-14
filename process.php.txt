@@ -1,0 +1,12 @@
+<?php
+$level = $_POST['level'];
+$accountType = $_POST['account_type'];
+$accountInfo = $_POST['account_info'];
+
+if ($level >= 40) {
+    echo "✅ الحساب صالح للاستبدال. سيتم التحقق من المعلومات.";
+    // هنا تقدر تخزن الطلب فقاعدة بيانات أو تسيفطو لإيميلك
+} else {
+    echo "❌ الحساب أقل من المستوى المطلوب (Level 40). غير مؤهل للاستبدال.";
+}
+?>

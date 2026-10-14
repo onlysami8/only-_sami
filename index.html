@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>استبدال الحساب</title>
+</head>
+<body>
+  <h2>طلب استبدال الحساب</h2>
+  <form action="process.php" method="POST">
+    <label>نوع الحساب:</label>
+    <select name="account_type" required>
+      <option value="google">Google</option>
+      <option value="facebook">Facebook</option>
+    </select><br><br>
+
+    <label>الإيميل أو ID:</label>
+    <input type="text" name="account_info" required><br><br>
+
+    <label>المستوى (Level):</label>
+    <input type="number" name="level" required><br><br>
+
+    <button type="submit">إرسال الطلب</button>
+  </form>
+</body>
+</html>
